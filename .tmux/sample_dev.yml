@@ -1,0 +1,12 @@
+# ~/.tmuxinator/sample_dev.yml
+
+project_name: sample_dev
+project_root: ~/Git/sample
+windows: 
+  - sample:
+      layout: main-vertical 
+      panes: 
+        - vim .
+        - bundle exec rails s
+        - bundle exec rails c
+        - #empty, will just run plain bash

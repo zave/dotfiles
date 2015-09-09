@@ -1,0 +1,26 @@
+syntax on
+
+filetype plugin indent on
+filetype plugin on
+
+let g:netrw_liststyle=3
+let g:netrw_alto=1
+let g:netrw_altv=1
+let g:netrw_localrmdir='rm -r'
+
+set nocp
+set laststatus=2
+set number
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set smarttab
+set noexpandtab
+set backupdir=./.backup,.,/tmp
+set directory=.,/.backup,/tmp
+set complete=.,b,u,]
+
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
+
+colorscheme slate

@@ -1,0 +1,12 @@
+# ~/.tmuxinator/murphy_dev.yml
+
+project_name: murphy_dev
+project_root: ~/Git/murphy
+windows: 
+  - mops:
+      layout: main-vertical 
+      panes: 
+        - vim .
+        - bundle exec rails s
+        - bundle exec rails c
+        - #empty, will just run plain bash
