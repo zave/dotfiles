@@ -1,0 +1,9 @@
+Installation:
+  
+  git clone git@github.com:zave/dotfiles.git
+
+Create symlinks:
+  
+  ln -s ~/Git/dotfiles/.vim/vimrc ~/.vimrc
+  ln -s ~/Git/dotfiles/.tmux/tmux.conf ~/.tmux.conf
+  ln -s ~/Git/dotfiles/.tmux/tmuxinator.bash ~/.bin/tmuxinator.bash
