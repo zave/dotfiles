@@ -7,6 +7,8 @@ Create symlinks:
   ln -s ~/Git/dotfiles/.vim/vimrc ~/.vimrc
   ln -s ~/Git/dotfiles/.tmux/tmux.conf ~/.tmux.conf
   ln -s ~/Git/dotfiles/.tmux/tmuxinator.bash ~/.bin/tmuxinator.bash
+  ln -s ~/Git/dotfiles/.bashrc ~/.bashrc
+  ln -s ~/Git/dotfiles/.bashrc.git ~/.bashrc.git
 
 Source config files:
   source .bashrc
