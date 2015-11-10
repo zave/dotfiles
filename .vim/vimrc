@@ -1,3 +1,4 @@
+runtime macros/matchit.vim
 syntax on
 
 filetype plugin indent on
@@ -15,7 +16,7 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set smarttab
-set noexpandtab
+set expandtab
 set backupdir=./.backup,.,/tmp
 set directory=.,/.backup,/tmp
 set complete=.,b,u,]
