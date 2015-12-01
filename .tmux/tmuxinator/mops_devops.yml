@@ -4,8 +4,9 @@ project_name: mops_devops
 project_root: ~/Git/mops
 windows: 
   - mops_devops:
-    - ssh xlopez@172.20.20.240 
+    - ssh xlopez@172.20.20.240
     - cd Git/mops
+    - clear
     layout: main-vertical 
     panes:  
       - vim:

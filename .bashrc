@@ -66,6 +66,14 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# Format the PATH variable for easy viewing
+function path(){
+  old=$IFS
+  IFS=:
+  printf "%s\n" $PATH
+  IFS=$old
+}
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
@@ -122,4 +130,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 . ~/.bashrc.git
 export EDITOR=vim
-export PATH="/opt/chefdk/embedded/bin:$PATH"
+
+# Avoid adding duplicate entries in the $PATH
+case ":$PATH:" in
+  *":$new_entry:"*) :;; #already there
+  *) PATH="$new_entry:$PATH";; # or PATH="$PATH:$new_entry"
+esac

@@ -2,7 +2,6 @@ runtime macros/matchit.vim
 syntax on
 
 filetype plugin indent on
-filetype plugin on
 
 let g:netrw_liststyle=3
 let g:netrw_alto=1
