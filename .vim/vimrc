@@ -1,3 +1,4 @@
+execute pathogen#infect()
 runtime macros/matchit.vim
 syntax on
 
@@ -7,6 +8,8 @@ let g:netrw_liststyle=3
 let g:netrw_alto=1
 let g:netrw_altv=1
 let g:netrw_localrmdir='rm -r'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 set nocp
 set laststatus=2
@@ -19,6 +22,7 @@ set expandtab
 set backupdir=./.backup,.,/tmp
 set directory=.,/.backup,/tmp
 set complete=.,b,u,]
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 map <Enter> o<ESC>
 map <S-Enter> O<ESC>
