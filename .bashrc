@@ -1,7 +1,7 @@
 # Call the above functions inside the PS1 declaration
-export PS1='\[$(git_color)\]$(parse_git_branch)\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
+ export PS1='\[$(git_color)\]$(parse_git_branch)\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
 
-# ~/.bashrc: executed by bash(1) for non-login shells.
+ #~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -126,9 +126,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-. ~/.bashrc.git
 export EDITOR=vim
 
 # Avoid adding duplicate entries in the $PATH
@@ -136,3 +136,8 @@ case ":$PATH:" in
   *":$new_entry:"*) :;; #already there
   *) PATH="$new_entry:$PATH";; # or PATH="$PATH:$new_entry"
 esac
+
+# Source tmuxinator.bash
+. ~/.bin/tmuxinator.bash 
+# Source bashrc.git
+. ~/.bashrc.git
