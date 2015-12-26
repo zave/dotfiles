@@ -1,5 +1,4 @@
 # ~/.tmuxinator/dev_ops.yml
-
 name: dev_ops
 root: ~/Git/mops
 

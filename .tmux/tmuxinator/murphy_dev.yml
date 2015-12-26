@@ -1,5 +1,4 @@
 # ~/.tmuxinator/murphy_dev.yml
-
 project_name: murphy_dev
 project_root: ~/Git/murphy
 windows: 

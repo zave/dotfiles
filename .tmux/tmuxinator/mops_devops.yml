@@ -1,5 +1,4 @@
 # ~/.tmuxinator/mops_devops.yml
-
 project_name: mops_devops
 project_root: ~/Git/mops
 windows: 
