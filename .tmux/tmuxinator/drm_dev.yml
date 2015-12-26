@@ -1,0 +1,11 @@
+# ~/.tmuxinator/drm_dev.yml
+project_name: drm_dev
+project_root: ~/Git/DRM
+windows: 
+  - drm:
+      layout: main-vertical 
+      panes: 
+        - vim .
+        - bundle exec rails s
+        - bundle exec rails c
+        - #empty, will just run plain bash

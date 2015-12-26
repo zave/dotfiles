@@ -1,0 +1,11 @@
+# ~/.tmuxinator/mops_dev.yml
+project_name: mops_dev
+project_root: ~/Git/mops
+windows: 
+  - mops:
+      layout: main-vertical 
+      panes: 
+        - vim .
+        - bundle exec rails s
+        - bundle exec rails c
+        - #empty, will just run plain bash
