@@ -138,6 +138,6 @@ case ":$PATH:" in
 esac
 
 # Source tmuxinator.bash
-. ~/.bin/tmuxinator.bash 
+source ~/.bin/tmuxinator.bash 
 # Source bashrc.git
-. ~/.bashrc.git
+source ~/.bashrc.git
