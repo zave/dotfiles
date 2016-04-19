@@ -3,6 +3,7 @@
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_usecaching = 0
 execute pathogen#infect()
+call pathogen#helptags()
 runtime macros/matchit.vim
 syntax on
 
