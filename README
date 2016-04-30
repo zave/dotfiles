@@ -11,6 +11,7 @@ Create symlinks:
   ln -s ~/Git/dotfiles/.tmux/tmuxinator.bash ~/.bin/tmuxinator.bash
   ln -s ~/Git/dotfiles/.bashrc ~/.bashrc
   ln -s ~/Git/dotfiles/.bashrc.git ~/.bashrc.git
+  ln -s ~/Git/dotfiles/.tmux/tmuxinator ~/.tmuxinator
 
 Source config files:
   source .bashrc
