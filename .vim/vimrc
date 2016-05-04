@@ -15,13 +15,14 @@ let g:netrw_altv=1
 let g:netrw_localrmdir='rm -r'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let &softtabstop=&shiftwidth
+
 
 set nocp
 set laststatus=2
 set number
 set relativenumber
 set tabstop=2
-set softtabstop=2
 set shiftwidth=2
 set smarttab
 set expandtab
