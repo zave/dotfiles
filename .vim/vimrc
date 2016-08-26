@@ -1,14 +1,13 @@
-" Make Ctrl-P use ag for listing the files. Way faster and no useless files.
-" Without --hidden, it never finds .travis.yml since it starts with a dot.
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-let g:ctrlp_usecaching = 0
 execute pathogen#infect()
 call pathogen#helptags()
 runtime macros/matchit.vim
 syntax on
-
 filetype plugin indent on
 
+" Make Ctrl-P use ag for listing the files. Way faster and no useless files.
+" Without --hidden, it never finds .travis.yml since it starts with a dot.
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+let g:ctrlp_usecaching = 0
 let g:netrw_liststyle=3
 let g:netrw_alto=1
 let g:netrw_altv=1
@@ -34,6 +33,7 @@ set list
 set incsearch
 set hlsearch
 set ignorecase
+set path+=app/**
 
 map <Enter> o<ESC>
 map <S-Enter> O<ESC>

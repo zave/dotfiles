@@ -1,11 +1,11 @@
-# ~/.tmuxinator/murphy_dev.yml
-project_name: murphy_dev
-project_root: ~/Git/murphy
+# ~/.tmuxinator/rails.yml
+project_name: rails
+project_root: ~/Git/<%= @args[0] %>
 windows:
-  - murphy:
+  - rails:
       layout: main-vertical
       panes:
         - vim .
-        - bundle exec rails s -p3001
+        - bundle exec rails s
         - bundle exec rails c
         - #empty, will just run plain bash
