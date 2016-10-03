@@ -1,5 +1,3 @@
-execute pathogen#infect()
-call pathogen#helptags()
 runtime macros/matchit.vim
 syntax on
 filetype plugin indent on
