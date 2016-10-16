@@ -2,16 +2,18 @@ runtime macros/matchit.vim
 syntax on
 filetype plugin indent on
 
-" Make Ctrl-P use ag for listing the files. Way faster and no useless files.
-" Without --hidden, it never finds .travis.yml since it starts with a dot.
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+# Ctrl-P configuration
 let g:ctrlp_usecaching = 0
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+
 let g:netrw_liststyle=3
 let g:netrw_alto=1
 let g:netrw_altv=1
 let g:netrw_localrmdir='rm -r'
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 let &softtabstop=&shiftwidth
 
 
@@ -25,7 +27,6 @@ set smarttab
 set backupdir=./.backup,.,/tmp
 set directory=.,/.backup,/tmp
 set complete=.,b,u,]
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 set list
 set incsearch
 set hlsearch
