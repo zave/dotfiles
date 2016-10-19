@@ -4,7 +4,7 @@ filetype plugin indent on
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-# Ctrl-P configuration
+" Ctrl-P configuration
 let g:ctrlp_usecaching = 0
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
