@@ -16,7 +16,7 @@ let g:netrw_altv=1
 let g:netrw_localrmdir='rm -r'
 let &softtabstop=&shiftwidth
 
-
+set paste
 set nocp
 set laststatus=2
 set number
