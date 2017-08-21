@@ -21,7 +21,8 @@ set nocp
 set laststatus=2
 set number
 set relativenumber
-set tabstop=2
+set tabstop=1
+set expandtab
 set shiftwidth=2
 set smarttab
 set backupdir=./.backup,.,/tmp
