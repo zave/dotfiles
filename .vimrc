@@ -25,6 +25,7 @@ set tabstop=1
 set expandtab
 set shiftwidth=2
 set smarttab
+set noswapfile
 set backupdir=./.backup,.,/tmp
 set directory=.,/.backup,/tmp
 set complete=.,b,u,]
