@@ -20,7 +20,6 @@ set paste
 set nocp
 set laststatus=2
 set number
-set relativenumber
 set tabstop=1
 set expandtab
 set shiftwidth=2
@@ -29,7 +28,6 @@ set noswapfile
 set backupdir=./.backup,.,/tmp
 set directory=.,/.backup,/tmp
 set complete=.,b,u,]
-set list
 set incsearch
 set hlsearch
 set ignorecase
