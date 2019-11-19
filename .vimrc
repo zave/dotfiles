@@ -1,14 +1,15 @@
-runtime macros/matchit.vim
-syntax on
-filetype plugin indent on
+" Automatic install of vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+call plug#begin('~/.vim/plugged')
 
-" Ctrl-P configuration
-let g:ctrlp_usecaching = 0
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
+call plug#end()
 
 let g:netrw_liststyle=3
 let g:netrw_alto=1
