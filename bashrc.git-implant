@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Let's do this from the home directory
+cd
+
+# Install git, if not already installed
+sudo apt-get install git -y
+
+# Copy .bashrc.git
+
+curl https://raw.githubusercontent.com/zave/dotfiles/master/.bashrc.git > ~/.bashrc.git
+source .bashrc.git
