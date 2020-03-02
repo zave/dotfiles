@@ -9,7 +9,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     brew update && brew install vim tmux
 elif [[ -f /etc/lsb-release ]] || [[ -f /etc/debian_version ]] || [[ -f /etc/SUSE-brand ]]; then
     # For some versions of Debian/Ubuntu without lsb_release command TESTED PASSED
-    sudo apt update
+    sudo apt-get update && sudo apt-get upgrade -y
     sudo apt-get purge vim -y
     sudo apt-get install vim curl tmux -y
     rm -f ~/.tmux.conf ~/.vimrc
