@@ -8,3 +8,4 @@ This script will do the following:
 TODO:
 - [ ] Use encryption for file verification.
 - [ ] Add Vagrantfiles for testing.
+- [ ] Rename this repo so it reflects vim and tmux
