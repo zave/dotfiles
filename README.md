@@ -1,4 +1,4 @@
-# Dotfile Implants for UN*X OSs
+# Vim and Tmux installation and configuration for UN*X OSs
 This script will do the following:
 1. Detect the distribution.
 2. Purge default version of vim, if present.
