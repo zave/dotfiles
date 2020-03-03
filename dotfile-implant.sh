@@ -27,6 +27,6 @@ else
      echo "Sorry, I don't recognive this unix / linux distribution."
 fi
 # Copy .vimrc and .tmux.conf from zave's github
-curl https://raw.githubusercontent.com/zave/dotfiles/master/.vimrc > ~/.vimrc
-curl https://raw.githubusercontent.com/zave/dotfiles/master/.tmux.conf > ~/.tmux.conf
+curl -s https://raw.githubusercontent.com/zave/dotfiles/master/.vimrc > ~/.vimrc
+curl -s https://raw.githubusercontent.com/zave/dotfiles/master/.tmux.conf > ~/.tmux.conf
 
