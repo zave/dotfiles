@@ -7,4 +7,6 @@ Vagrant.configure("2") do |config|
 #  config.vm.box = "bento/fedora-31"
 
   config.vm.provision "shell", privileged: false, path: "script/dotfile-implant.sh"
+  config.vm.provision "file", source: "config/.vimrc", destination: "$HOME/.vimrc"
+  config.vm.provision "file", source: "config/.tmux.conf", destination: "$HOME/.tmux.conf"
 end

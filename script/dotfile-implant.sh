@@ -26,7 +26,3 @@ else
     # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
      echo "Sorry, I don't recognive this unix / linux distribution."
 fi
-# Copy .vimrc and tmux.conf from zave's github
-curl https://raw.githubusercontent.com/zave/dotfiles/master/.vimrc --output ~/.vimrc
-curl https://raw.githubusercontent.com/zave/dotfiles/master/.tmux.conf --output ~/.tmux.conf
-
