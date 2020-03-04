@@ -6,4 +6,4 @@ This script will do the following:
 4. Install zave's preferred configuration for vim and tmux, from his Github repo.
 Usage:
 1. Look at the Vagrantfile and decide which distribution you want to play with.
-1. Run `vagrant <distribution-of-your-choice>`
+2. Run `vagrant <distribution-of-your-choice>`
