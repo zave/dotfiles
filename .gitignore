@@ -7,3 +7,4 @@ boxes/*
 /website/build
 /vagrant-spec.config.rb
 test/vagrant-spec/.vagrant/
+.DS_Store
