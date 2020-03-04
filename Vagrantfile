@@ -6,5 +6,5 @@ Vagrant.configure("2") do |config|
 #  config.vm.box = "bento/opensuse-leap-15.1"
 #  config.vm.box = "bento/fedora-31"
 
-  config.vm.provision "shell", privileged: false, path: "../dotfile-implant.sh"
+  config.vm.provision "shell", privileged: false, path: "../script/dotfile-implant.sh"
 end
