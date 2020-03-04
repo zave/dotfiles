@@ -4,8 +4,6 @@ This script will do the following:
 2. Purge default version of vim, if present.
 3. Install vim and tmux.
 4. Install zave's preferred configuration for vim and tmux, from his Github repo.
-
-TODO:
-- [ ] Use encryption for file verification.
-- [ ] Add Vagrantfiles for testing.
-- [ ] Rename this repo so it reflects vim and tmux
+Usage:
+1. Look at the Vagrantfile and decide which distribution you want to play with.
+1. Run `vagrant <distribution-of-your-choice>`
