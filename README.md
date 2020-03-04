@@ -7,4 +7,5 @@ This script will do the following:
 
 Usage:
 1. Look at the Vagrantfile and decide which distribution you want to play with.
-2. Run `vagrant <distribution-of-your-choice>`
+2. Uncomment the one you want. 
+3. Run `vagrant <distribution-of-your-choice>`
